@@ -1,0 +1,21 @@
+.caregiver-dashboard { min-height: 100vh; color: #28372c; background: #f7f8f4; font-family: 'Plus Jakarta Sans', 'Nunito Sans', sans-serif; }
+.caregiver-dashboard * { box-sizing: border-box; }
+.caregiver-dashboard-header { min-height: 72px; padding: 0 max(24px, calc((100% - 1120px) / 2)); display: flex; align-items: center; justify-content: space-between; background: #fff; border-bottom: 1px solid #e9ece5; }
+.caregiver-dashboard-brand { display: inline-flex; align-items: center; gap: 10px; color: #28372c; text-decoration: none; }
+.caregiver-dashboard-brand > span { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; color: #a45227; background: #fae7d8; }
+.caregiver-dashboard-header button { padding: 8px 12px; border: 0; border-radius: 8px; color: #647161; background: transparent; font: inherit; font-size: .82rem; cursor: pointer; }
+.caregiver-dashboard-header button:hover { background: #f2f5ef; }
+.caregiver-dashboard-content { width: min(1060px, calc(100% - 40px)); margin: 0 auto; padding: 64px 0; }
+.caregiver-dashboard-eyebrow { display: inline-flex; align-items: center; gap: 7px; color: #71836a; font-size: .68rem; font-weight: 800; letter-spacing: .12em; }
+.caregiver-dashboard-content h1 { margin: 12px 0 8px; font-size: clamp(2rem, 4vw, 2.8rem); letter-spacing: -.055em; }
+.caregiver-dashboard-intro { max-width: 570px; margin: 0; color: #7a8279; font-size: .95rem; line-height: 1.6; }
+.caregiver-dashboard-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 17px; margin-top: 36px; }
+.caregiver-dashboard-grid article { min-height: 190px; padding: 23px; border: 1px solid #e8ece4; border-radius: 16px; background: white; box-shadow: 0 5px 18px #27362705; }
+.caregiver-dashboard-icon { width: 40px; height: 40px; display: grid; place-items: center; margin-bottom: 22px; border-radius: 12px; color: #55734f; background: #edf3e9; }
+.caregiver-dashboard-icon--peach { color: #a56d49; background: #fbf0e7; }
+.caregiver-dashboard-icon--lavender { color: #76638c; background: #f0eafa; }
+.caregiver-dashboard-grid small { color: #84907f; font-size: .62rem; font-weight: 800; letter-spacing: .1em; }
+.caregiver-dashboard-grid h2 { margin: 6px 0; font-size: 1.05rem; }
+.caregiver-dashboard-grid p { margin: 0; color: #7a8279; font-size: .78rem; line-height: 1.5; }
+.caregiver-demo-note { margin-top: 22px; padding: 14px 16px; border: 1px solid #e6eadf; border-radius: 11px; color: #6d7868; background: #f0f4ec; font-size: .76rem; line-height: 1.55; }
+@media (max-width: 650px) { .caregiver-dashboard-header { min-height: 64px; padding: 0 18px; } .caregiver-dashboard-content { padding: 42px 0; } .caregiver-dashboard-grid { grid-template-columns: 1fr; gap: 11px; margin-top: 25px; } .caregiver-dashboard-grid article { min-height: 0; padding: 18px; } .caregiver-dashboard-icon { margin-bottom: 15px; } }

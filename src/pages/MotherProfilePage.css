@@ -1,0 +1,28 @@
+.dashboard-back-button { display: inline-flex; align-items: center; gap: 7px; padding: 8px 11px; border: 0; border-radius: 9px; color: #63715f; background: transparent; font: inherit; font-size: .78rem; font-weight: 650; cursor: pointer; }
+.dashboard-back-button:hover { background: #f2f5ef; }
+.profile-page-content { max-width: 900px; }
+.profile-page-title { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 24px; }
+.profile-page-title h1 { margin: 8px 0 5px; color: #29382c; font-size: clamp(1.8rem, 3vw, 2.3rem); letter-spacing: -.05em; }
+.profile-page-title p { margin: 0; color: #7a8279; font-size: .86rem; }
+.profile-page-card { padding: 24px; }
+.profile-page-card > .dashboard-panel-heading { margin-bottom: 20px; }
+.profile-page-card > .dashboard-panel-heading h2 { font-size: 1.1rem; }
+.profile-page-form { display: flex; flex-direction: column; gap: 17px; }
+.profile-saved-note { margin: 0 0 14px; padding: 11px 14px; border: 1px solid #e1eadd; border-radius: 10px; color: #56704f; background: #f4f7f1; font-size: .78rem; }
+.profile-view-heading { display: flex; align-items: center; gap: 13px; padding-bottom: 20px; border-bottom: 1px solid #eff1ed; }
+.profile-view-heading h2 { margin: 0 0 4px; color: #2b392e; font-size: 1.05rem; }
+.profile-view-heading p { margin: 0; color: #7a8279; font-size: .74rem; }
+.profile-view-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
+.profile-view-item { display: flex; align-items: flex-start; gap: 11px; min-width: 0; padding: 16px 0; border-bottom: 1px solid #f0f2ed; }
+.profile-view-icon { display: grid; place-items: center; flex: 0 0 auto; width: 33px; height: 33px; border-radius: 10px; color: #637d5b; background: #f0f4ed; }
+.profile-view-item > span:last-child { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.profile-view-item small { color: #838b80; font-size: .68rem; }
+.profile-view-item strong { color: #354337; font-size: .78rem; font-weight: 650; line-height: 1.45; overflow-wrap: anywhere; }
+.profile-local-note { margin: 16px 0 0; }
+
+@media (max-width: 640px) {
+  .dashboard-back-button { padding: 8px; font-size: .7rem; }
+  .profile-page-title { align-items: flex-start; flex-direction: column; }
+  .profile-page-card { padding: 17px 14px; }
+  .profile-view-grid { grid-template-columns: 1fr; }
+}

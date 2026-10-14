@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Ethiopic:wght@400;500;600;700&display=swap');
+
+:root {
+  --surface: #fff8f6;
+  --surface-dim: #e8d6d1;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #fff1ed;
+  --surface-container: #fdeae5;
+  --surface-container-high: #f7e4df;
+  --on-surface: #231917;
+  --on-surface-variant: #57423c;
+  --outline: #8a726a;
+  --primary: #933410;
+  --on-primary: #ffffff;
+  --primary-container: #b34b26;
+  --secondary: #45664b;
+  --background: #fff8f6;
+  --text-color: var(--on-surface);
+  --text-muted: var(--on-surface-variant);
+
+  color: var(--text-color);
+  background: var(--background);
+  font-family: 'Plus Jakarta Sans', 'Noto Sans Ethiopic', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text-color);
+}
+
+button,
+a,
+input,
+textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+}

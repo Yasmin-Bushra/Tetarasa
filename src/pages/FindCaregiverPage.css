@@ -1,0 +1,71 @@
+.find-care-page .dashboard-nav button, .caregiver-profile-page .dashboard-nav button { height: 100%; position: relative; padding: 0; border: 0; color: #6f786d; background: transparent; font: inherit; font-size: .83rem; font-weight: 650; cursor: pointer; }
+.dashboard-brand-button { border: 0; background: transparent; font: inherit; text-align: left; cursor: pointer; }
+.find-care-page .dashboard-nav button:hover, .caregiver-profile-page .dashboard-nav button:hover, .find-care-page .dashboard-nav button.is-active, .caregiver-profile-page .dashboard-nav button.is-active { color: var(--dash-green-dark); }
+.find-care-page .dashboard-nav button.is-active::after, .caregiver-profile-page .dashboard-nav button.is-active::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: #77956d; border-radius: 4px 4px 0 0; }
+.find-care-content { max-width: 1060px; }
+.find-care-back { display: inline-flex; align-items: center; gap: 7px; margin: 0 0 22px; padding: 6px 0; border: 0; color: #71806c; background: transparent; font: inherit; font-size: .77rem; font-weight: 650; cursor: pointer; }
+.find-care-back:hover { color: #3f5f3d; }
+.find-care-heading { margin-bottom: 22px; }
+.find-care-heading h1 { margin: 8px 0 6px; color: #29382c; font-size: clamp(1.9rem, 3.5vw, 2.5rem); letter-spacing: -.055em; }
+.find-care-heading p { margin: 0; color: #7a8279; font-size: .87rem; }
+.caregiver-search-panel { display: grid; grid-template-columns: minmax(240px, 1fr) auto; gap: 15px; align-items: center; padding: 14px; border: 1px solid #e9ece5; border-radius: 14px; background: #fff; }
+.caregiver-search-input { display: flex; align-items: center; gap: 10px; min-width: 0; height: 44px; padding: 0 13px; border: 1px solid #e2e7de; border-radius: 10px; color: #81907b; background: #fff; }
+.caregiver-search-input:focus-within { border-color: #90a388; box-shadow: 0 0 0 3px #77956d1c; }
+.caregiver-search-input input { width: 100%; min-width: 0; height: 100%; padding: 0; border: 0; outline: 0; color: #354337; background: transparent; font: inherit; font-size: .78rem; }
+.caregiver-search-input input::placeholder { color: #9aa197; }
+.caregiver-filter-group { display: flex; align-items: center; gap: 8px; color: #71806c; }
+.caregiver-filter-group > span { margin-right: 2px; font-size: .7rem; font-weight: 700; }
+.caregiver-filter-group label { position: relative; }
+.caregiver-filter-group select { max-width: 175px; height: 40px; padding: 0 28px 0 10px; border: 1px solid #e2e7de; border-radius: 9px; outline: 0; color: #586653; background: #fff; font: inherit; font-size: .7rem; }
+.caregiver-filter-group select:focus { border-color: #90a388; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.caregiver-results-heading { display: flex; align-items: center; justify-content: space-between; min-height: 46px; }
+.caregiver-results-heading p { margin: 0; color: #7a8279; font-size: .74rem; }
+.caregiver-results-heading button, .find-care-empty button { padding: 6px 0; border: 0; color: #5c7656; background: transparent; font: inherit; font-size: .72rem; font-weight: 700; cursor: pointer; }
+.find-caregiver-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; }
+.find-caregiver-card { display: flex; flex-direction: column; min-width: 0; padding: 18px; border: 1px solid #e9ece5; border-radius: 15px; background: #fff; transition: border-color .2s, transform .2s; }
+.find-caregiver-card:hover { transform: translateY(-2px); border-color: #d7e1d1; }
+.find-caregiver-card-top { display: flex; align-items: flex-start; justify-content: space-between; }
+.find-caregiver-avatar { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 16px; color: #5f7658; background: #eaf0e6; font-size: .94rem; font-weight: 800; }
+.find-caregiver-card:nth-child(2) .find-caregiver-avatar { color: #79698e; background: #f0ecf5; }
+.find-caregiver-card:nth-child(3) .find-caregiver-avatar { color: #9a6d50; background: #f7eee7; }
+.find-caregiver-rating, .caregiver-profile-rating { color: #8c754f; font-size: .68rem; font-weight: 700; }
+.find-caregiver-card h2 { margin: 14px 0 3px; color: #2e3d31; font-size: .94rem; letter-spacing: -.02em; }
+.find-caregiver-title { margin: 0; color: #74806e; font-size: .7rem; }
+.find-caregiver-facts { display: flex; flex-direction: column; gap: 7px; margin-top: 14px; color: #737e70; font-size: .68rem; }
+.find-caregiver-facts span { display: flex; align-items: center; gap: 6px; }
+.find-caregiver-services { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 13px; }
+.find-caregiver-services span, .caregiver-profile-services span { padding: 6px 8px; border-radius: 8px; color: #687563; background: #f5f7f3; font-size: .63rem; line-height: 1.3; }
+.find-caregiver-view-button { width: 100%; min-height: 38px; margin-top: 16px; border: 1px solid #dce6d7; border-radius: 9px; color: #55734f; background: #f8faf6; font: inherit; font-size: .72rem; font-weight: 750; cursor: pointer; }
+.find-caregiver-view-button:hover { color: #fff; background: #55734f; }
+.find-care-empty { display: flex; flex-direction: column; align-items: center; padding: 42px 20px; border: 1px dashed #dfe6da; border-radius: 14px; background: #fbfcfa; text-align: center; }
+.find-care-empty > span { display: grid; place-items: center; width: 43px; height: 43px; margin-bottom: 10px; border-radius: 14px; color: #71866a; background: #f0f4ed; }
+.find-care-empty h2 { margin: 0 0 5px; color: #344235; font-size: .96rem; }
+.find-care-empty p { margin: 0; color: #80897c; font-size: .75rem; }
+.find-care-empty button { margin-top: 10px; }
+.find-care-demo-note { margin: 18px 0 0; color: #92998e; font-size: .65rem; text-align: center; }
+
+@media (max-width: 850px) {
+  .caregiver-search-panel { grid-template-columns: 1fr; }
+  .caregiver-filter-group { flex-wrap: wrap; }
+  .find-caregiver-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .find-care-page .dashboard-nav button, .caregiver-profile-page .dashboard-nav button { font-size: .71rem; }
+  .find-care-content { padding-top: 26px; }
+  .find-care-back { margin-bottom: 17px; }
+  .find-care-heading { margin-bottom: 17px; }
+  .caregiver-search-panel { gap: 10px; padding: 11px; }
+  .caregiver-filter-group { display: grid; grid-template-columns: 1fr 1fr; }
+  .caregiver-filter-group > svg, .caregiver-filter-group > span { grid-column: 1 / -1; }
+  .caregiver-filter-group select { width: 100%; max-width: none; }
+  .find-caregiver-grid { grid-template-columns: 1fr; gap: 10px; }
+  .find-caregiver-card { display: grid; grid-template-columns: 58px 1fr auto; column-gap: 11px; padding: 14px; }
+  .find-caregiver-card-top { display: contents; }
+  .find-caregiver-avatar { grid-row: 1 / 4; width: 50px; height: 50px; }
+  .find-caregiver-rating { grid-column: 3; grid-row: 1; }
+  .find-caregiver-card h2 { margin: 2px 0 2px; }
+  .find-caregiver-title { grid-column: 2 / 4; }
+  .find-caregiver-facts, .find-caregiver-services { grid-column: 2 / 4; margin-top: 8px; }
+  .find-caregiver-view-button { grid-column: 1 / -1; margin-top: 12px; }
+}

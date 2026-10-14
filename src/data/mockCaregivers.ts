@@ -1,0 +1,43 @@
+import type { Caregiver } from '../types/caregiver'
+
+export const mockCaregivers: Caregiver[] = [
+  {
+    id: 'sara-bekele',
+    name: 'Sara Bekele',
+    title: 'Postnatal caregiver',
+    services: ['Postpartum recovery', 'Newborn care', 'Overnight support'],
+    experienceYears: 6,
+    location: 'Bole, Addis Ababa',
+    initials: 'SB',
+    rating: '4.9',
+    bio: 'I support new mothers with gentle recovery care and practical newborn help during the first weeks at home.',
+    languages: ['Amharic', 'English'],
+    availability: 'Weekdays and weekends',
+  },
+  {
+    id: 'liya-tadesse',
+    name: 'Liya Tadesse',
+    title: 'Postpartum and newborn care',
+    services: ['Newborn care', 'Breastfeeding support', 'Postpartum recovery'],
+    experienceYears: 4,
+    location: 'Kirkos, Addis Ababa',
+    initials: 'LT',
+    rating: '4.8',
+    bio: 'I help families settle into life with a new baby, with a focus on feeding support and reassuring newborn care.',
+    languages: ['Amharic', 'English', 'Oromo'],
+    availability: 'Monday to Saturday',
+  },
+  {
+    id: 'mimi-alemu',
+    name: 'Mimi Alemu',
+    title: 'Maternal wellness caregiver',
+    services: ['Emotional wellbeing', 'Meals and rest', 'Postpartum recovery'],
+    experienceYears: 8,
+    location: 'Yeka, Addis Ababa',
+    initials: 'MA',
+    rating: '5.0',
+    bio: 'I offer calm, family-centered postpartum support to make space for rest, nourishment, and emotional wellbeing.',
+    languages: ['Amharic', 'English'],
+    availability: 'Flexible daytime visits',
+  },
+]
